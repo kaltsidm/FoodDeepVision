@@ -1,4 +1,6 @@
 import tensorflow as tf
+import tensorflow_datasets as tfds
+import matplotlib.pyploy as plt
 
 # Data configuration
 DATA_NAME = "food101"
