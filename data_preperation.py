@@ -1,7 +1,5 @@
 import tensorflow_datasets as tfds
 from functions import plt, tf
-from tensorflow.keras import mixed_precision
-
 datasets_lists = tfds.list_builders()
 # 12 minutes
 (train_data, test_data) , df_info = tfds.load(name = "food101",
@@ -54,5 +52,7 @@ model_checkpoint = tf.keras.callbacks.ModelCheckpoint(CHECKPOINT_PATH,
                                                       save_weights_only = True,
                                                       verbose = 0) #dot not print anything
 
+
+from tensorflow.keras import mixed_precision
 mixed_precision.set_global_policy("mixed_float16")
 
