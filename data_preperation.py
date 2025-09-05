@@ -1,5 +1,4 @@
-import tensorflow_datasets as tfds
-from functions import plt, tf
+from config import *
 datasets_lists = tfds.list_builders()
 # 12 minutes
 (train_data, test_data) , df_info = tfds.load(name = "food101",
