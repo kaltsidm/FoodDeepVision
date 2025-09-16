@@ -52,6 +52,6 @@ model_checkpoint = tf.keras.callbacks.ModelCheckpoint(CHECKPOINT_PATH,
                                                       verbose = 0) #dot not print anything
 
 
-from tensorflow.keras import mixed_precision
+
 mixed_precision.set_global_policy("mixed_float16")
 

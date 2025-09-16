@@ -1,6 +1,7 @@
 import tensorflow as tf
 import tensorflow_datasets as tfds
 import matplotlib.pyplot as plt
+from tensorflow.keras import mixed_precision
 
 # Data configuration
 DATA_NAME = "food101"
